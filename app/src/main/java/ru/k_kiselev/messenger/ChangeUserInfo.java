@@ -1,6 +1,7 @@
 package ru.k_kiselev.messenger;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
@@ -13,6 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.io.File;
 
@@ -61,9 +63,16 @@ public class ChangeUserInfo extends Activity implements View.OnClickListener {
                 break;
             case R.id.btn_add_photo_form_file:
                 //
+                Context context = getApplicationContext();
+                CharSequence text = "Foto from file";
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
                 break;
             case R.id.btn_save:
                 //
+
                 break;
 
         }
@@ -71,7 +80,7 @@ public class ChangeUserInfo extends Activity implements View.OnClickListener {
 
     public void onClickPhoto(View view) {
         Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        intent.putExtra(MediaStore.EXTRA_OUTPUT, generateFileUri(TYPE_PHOTO));
+        //intent.putExtra(MediaStore.EXTRA_OUTPUT, generateFileUri(TYPE_PHOTO));
         startActivityForResult(intent, REQUEST_CODE_PHOTO);
     }
 
