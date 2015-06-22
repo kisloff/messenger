@@ -19,7 +19,9 @@
     android:layout_height="40dp"
     android:id="@+id/btn_take_photo"
     android:layout_weight="0.43"
-    android:layout_marginLeft="60dp"/>
+    android:layout_marginLeft="60dp"
+    android:onClick="onClickPhoto"
+        />
     <ImageButton
         android:layout_width="40dp"
         android:layout_height="40dp"

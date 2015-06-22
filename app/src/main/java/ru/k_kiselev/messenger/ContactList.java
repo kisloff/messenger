@@ -29,7 +29,7 @@ public class ContactList extends ActionBarActivity {
         setContentView(R.layout.contact_list);
 
         lv_list_activity = (ListView)findViewById(R.id.lv_contact_list);
-        intent = new Intent(this, ContactInfo.class);
+        intent = new Intent(this, ChangeUserInfo.class);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_list_item_1, names);
