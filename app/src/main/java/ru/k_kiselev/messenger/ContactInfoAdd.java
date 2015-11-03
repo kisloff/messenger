@@ -5,9 +5,6 @@ import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-/**
- * Created by Кирилл on 22.06.2015.
- */
 public class ContactInfoAdd extends Activity{
 
     ImageView ivPortrait;
@@ -24,6 +21,5 @@ public class ContactInfoAdd extends Activity{
 
         //temporary
         ivPortrait.setImageResource(R.drawable.satellites_around_earth);
-
     }
 }

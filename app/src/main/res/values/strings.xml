@@ -1,16 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">messenger</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">A messenger</string>
+
+    <!--Strings for login_activity-->
     <string name="lbl_email">Email</string>
     <string name="lbl_password">Password</string>
     <string name="btn_login">Login</string>
+    <string name="slogan">Send your message</string>
+
+    <string name="action_settings">Settings</string>
     <string name="tv_nickname">Nickname</string>
     <string name="tv_status">Status</string>
     <string name="add_contact">Add contact</string>
     <string name="save">Save</string>
+
+    <!-- for test only -->
+    <string name="action_cat_male">Кот</string>
+    <string name="action_cat_female">Кошка</string>
+    <string name="action_kitten">Котёнок</string>
+
+    <string name="tale_photo">take photo</string>
+    <string name="from_file">add from file</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
 
 
 </resources>

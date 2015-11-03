@@ -1,54 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:layout_marginTop="25dp"
+    android:orientation="vertical">
 
     <ImageView
-        android:layout_width="247dp"
-        android:layout_height="wrap_content"
         android:id="@+id/iv_portrait"
-        android:layout_gravity="center"
-        android:layout_weight="0.43" />
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center" />
 <LinearLayout
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-
-    <ImageButton
-    android:layout_width="40dp"
-    android:layout_height="40dp"
-    android:id="@+id/btn_take_photo"
-    android:layout_weight="0.43"
-    android:layout_marginLeft="60dp"
-    android:onClick="onClickPhoto"
-        />
-    <ImageButton
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:id="@+id/btn_add_photo_form_file"
-        android:layout_marginLeft="10dp"
-        android:layout_weight="0.43" />
-</LinearLayout>
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/et_edit_nickname"
-        android:layout_weight="0.1" />
-
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/et_edit_status"
-        android:layout_weight="0.1" />
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
 
     <Button
+        android:id="@+id/btn_take_photo"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/save"
+        android:layout_height="40dp"
+        android:onClick="onClickPhoto"
+        android:text="@string/tale_photo" />
+
+    <Button
+        android:id="@+id/btn_add_photo_form_file"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_launcher"
+        android:text="@string/from_file" />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit nickname" />
+
+    <EditText
+        android:id="@+id/et_edit_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit status" />
+
+    <EditText
+        android:id="@+id/et_edit_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
         android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.1" />
-
-
+        android:text="@string/save" />
+    </LinearLayout>
 </LinearLayout>

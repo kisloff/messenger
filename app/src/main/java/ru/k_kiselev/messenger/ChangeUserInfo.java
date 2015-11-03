@@ -12,28 +12,21 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.io.File;
 
-/**
- * Created by Кирилл on 21.06.2015.
- */
 public class ChangeUserInfo extends Activity implements View.OnClickListener {
 
-    ImageView portrait;
-    ImageButton takePhoto, addPhotoFromFile;
-    EditText editNickname, editStatus;
-    Button btnSave;
-
-    File directory;
     final int TYPE_PHOTO = 1;
     final int REQUEST_CODE_PHOTO = 1;
-
     final String TAG = "myLogs";
-
+    ImageView portrait;
+    Button takePhoto, addPhotoFromFile;
+    EditText editNickname, editStatus;
+    Button btnSave;
+    File directory;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,9 +36,9 @@ public class ChangeUserInfo extends Activity implements View.OnClickListener {
 
         portrait = (ImageView)findViewById(R.id.iv_portrait);
 
-        takePhoto = (ImageButton)findViewById(R.id.btn_take_photo);
+        takePhoto = (Button) findViewById(R.id.btn_take_photo);
         //takePhoto.setOnClickListener(onClickPhoto);
-        addPhotoFromFile = (ImageButton)findViewById(R.id.btn_add_photo_form_file);
+        addPhotoFromFile = (Button) findViewById(R.id.btn_add_photo_form_file);
         addPhotoFromFile.setOnClickListener(this);
 
         editNickname = (EditText)findViewById(R.id.et_edit_nickname);
