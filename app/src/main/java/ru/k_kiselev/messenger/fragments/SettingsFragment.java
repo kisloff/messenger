@@ -1,4 +1,4 @@
-package ru.k_kiselev.messenger;
+package ru.k_kiselev.messenger.fragments;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,7 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class menu1_Fragment extends Fragment {
+import ru.k_kiselev.messenger.R;
+
+public class SettingsFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

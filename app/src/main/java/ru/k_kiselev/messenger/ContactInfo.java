@@ -20,6 +20,6 @@ public class ContactInfo extends Activity {
         status = (TextView)findViewById(R.id.lbl_status);
 
         //temporary
-        ivPortrait.setImageResource(R.drawable.satellites_around_earth);
+        ivPortrait.setImageResource(R.drawable.ic_drawer);
     }
 }

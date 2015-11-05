@@ -12,7 +12,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name=".main.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,13 +20,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".ContactList" />
+        <activity android:name=".main.LoginActivity" />
+        <activity android:name=".fragments.ContactList" />
         <activity android:name=".ContactInfo" />
         <activity android:name=".Settings" />
         <activity android:name=".ChangeUserInfo" />
         <activity android:name=".ImportContacts" />
-        <activity android:name=".MenuContactList" />
         <activity android:name=".ContactInfoAdd" />
 
     </application>

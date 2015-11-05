@@ -1,4 +1,4 @@
-package ru.k_kiselev.messenger;
+package ru.k_kiselev.messenger.fragments;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -19,6 +19,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import ru.k_kiselev.messenger.ChangeUserInfo;
+import ru.k_kiselev.messenger.R;
+
 public class ContactList extends AppCompatActivity
         implements NavigationDrawerFragment.NavigationDrawerCallbacks {
 
@@ -26,7 +29,6 @@ public class ContactList extends AppCompatActivity
     ListView lv_list_activity;
     String[] names = { "Иван", "Марья", "Петр", "Антон", "Даша", "Борис",
             "Костя", "Игорь", "Анна", "Денис", "Андрей" };
-    Intent intent;
     private NavigationDrawerFragment mNavigationDrawerFragment;
     private CharSequence mTitle;
 
@@ -46,7 +48,7 @@ public class ContactList extends AppCompatActivity
 
 
         lv_list_activity = (ListView)findViewById(R.id.lv_contact_list);
-        intent = new Intent(this, ChangeUserInfo.class);
+        final Intent intent = new Intent(this, ChangeUserInfo.class);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
                 android.R.layout.simple_list_item_1, names);
@@ -72,13 +74,13 @@ public class ContactList extends AppCompatActivity
 
         switch (position) {
             case 0:
-                objFragment = new menu1_Fragment();
+                objFragment = new SettingsFragment();
                 break;
             case 1:
-                objFragment = new menu2_Fragment();
+                objFragment = new ChangeUserInfoFragment();
                 break;
             case 2:
-                objFragment = new menu3_Fragment();
+                objFragment = new ImportContactsFragment();
                 break;
         }
 
@@ -99,6 +101,9 @@ public class ContactList extends AppCompatActivity
                 break;
             case 3:
                 mTitle = getString(R.string.title_section3);
+                break;
+            default:
+                // mTitle = new HomeFragment();
                 break;
         }
     }
@@ -178,5 +183,4 @@ public class ContactList extends AppCompatActivity
                     getArguments().getInt(ARG_SECTION_NUMBER));
         }
     }
-
 }

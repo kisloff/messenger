@@ -19,7 +19,7 @@
     <string name="from_file">add from file</string>
     <string name="title_activity_main2">Main2Activity</string>
 
-    <string name="title_section1">Options</string>
+    <string name="title_section1">Settings</string>
     <string name="title_section2">Change user info</string>
     <string name="title_section3">Import user contact</string>
 
@@ -28,6 +28,9 @@
 
     <string name="action_example">Example action</string>
     <string name="skip_checks">Skip checks</string>
+
+    <string name="settings">Settings</string>
+    <string name="add">add contact</string>
 
 
 </resources>
