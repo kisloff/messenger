@@ -8,12 +8,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class menu1_Fragment extends Fragment {
-    View rootview;
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        rootview = inflater.inflate(R.layout.menu1_layout, container, false);
-        return rootview;
+        View rootview;
+        return rootview = inflater.inflate(R.layout.menu1_layout, container, false);
     }
 }
