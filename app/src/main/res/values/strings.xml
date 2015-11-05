@@ -15,18 +15,13 @@
     <string name="add_contact">Add contact</string>
     <string name="save">Save</string>
 
-    <!-- for test only -->
-    <string name="action_cat_male">Кот</string>
-    <string name="action_cat_female">Кошка</string>
-    <string name="action_kitten">Котёнок</string>
-
     <string name="tale_photo">take photo</string>
     <string name="from_file">add from file</string>
     <string name="title_activity_main2">Main2Activity</string>
 
-    <string name="title_section1">Section 1</string>
-    <string name="title_section2">Section 2</string>
-    <string name="title_section3">Section 3</string>
+    <string name="title_section1">Options</string>
+    <string name="title_section2">Change user info</string>
+    <string name="title_section3">Import user contact</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
